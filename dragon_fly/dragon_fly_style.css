@@ -1,0 +1,11 @@
+.left-wing {
+    /* background-color: black; */
+    /* width: 100px; */
+    /* height: 50px; */
+     /* border-radius: 80% 0 80% 0; */
+  /* transform-origin: right center; */
+  width: 300px;
+  height: 300px;
+  background: black;
+  clip-path: path('M 0 120 Q 130 0, 300 10 L 140 200 Z');
+}

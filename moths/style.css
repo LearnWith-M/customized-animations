@@ -1,0 +1,12 @@
+ .container {
+      position: relative;
+      width: 100%;
+      height: 90vh;
+      overflow: hidden;
+      background-color: black;
+    }
+
+    .item {
+      position: absolute;
+      border-radius: 50%;
+    }

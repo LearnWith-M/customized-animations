@@ -1,0 +1,101 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  background: white;
+}
+
+.right-feather {
+    width: 100px;
+    height: 50px;
+    border-radius: 0% 100% 50% 100%;
+    background: red;
+    animation: spin 2.5s linear infinite;
+    transform-origin: top left;
+}
+
+.right-feather:hover {
+    background: yellow;
+}
+
+.right-feather-top {
+    width: 100px;
+    height: 50px;
+    border-radius: 100% 50% 100% 0%;
+    background: red;
+    animation: spin 2s linear infinite;
+    transform-origin: bottom left;
+}
+
+.right-feather-top:hover {
+    background: green;
+}
+
+.left-feather {
+    width: 100px;
+    height: 50px;
+    border-radius: 100% 0% 100% 50%;
+    background: red;
+    animation: left-spin 2.5s linear infinite;
+    transform-origin: top right;
+}
+
+.left-feather:hover {
+    background: yellow;
+}
+
+.left-feather-top {
+    width: 100px;
+    height: 50px;
+    border-radius: 100% 100% 0% 100%;
+    background: red;
+    animation: left-spin 2s linear infinite;
+    transform-origin: bottom right;
+}
+
+.left-feather-top:hover {
+    background: green;
+     animation: left-spin 2s linear infinite;
+}
+
+.center-body {
+    width: 20px;
+    height: 200px;
+    background: black;
+    border-radius: 50%; 
+    z-index: 1;
+}
+
+.center-body:hover {
+   background-color: antiquewhite;
+   height: 250px;
+}
+
+.dragon-fly {
+    display: flex;
+}
+
+@keyframes spin {
+  0%   { transform: rotate(-30deg);  }
+  50% { transform: rotate(30deg); }
+  100% {transform: rotate(-30deg);}
+}
+
+@keyframes left-spin {
+  0%   { transform: rotate(30deg); }
+  50% { transform: rotate(-30deg); }
+  100% {transform: rotate(30deg);}
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+@keyframes moveBounce {
+  0%   { transform: translateY(0); }
+  50%  { transform: translateY(-50px); }
+  100% { transform: translateY(0); }
+}

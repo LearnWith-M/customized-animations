@@ -1,0 +1,10 @@
+.left-feather-top {
+    /* animation: left-spin 2s linear infinite; */
+    transform-origin: top left;
+}
+
+@keyframes left-spin {
+  0%   { transform: rotate(-30deg); }
+  50% { transform: rotate(0deg); }
+  100% {transform: rotate(-30deg);}
+}
