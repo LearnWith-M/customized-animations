@@ -1,0 +1,36 @@
+.card {
+    height: 200px;
+    width: 200px;
+    background-color: black;
+    z-index: 2;
+    overflow: hidden;
+}
+
+
+.card__mover {
+    width: 200%;
+    height: 200%;
+    /* background: linear-gradient(blue, green, red); */
+    background: linear-gradient(45deg, red 30% 50%, blue 50% 100%);
+    z-index: 3;
+    animation: rotate 2s infinite linear;
+}
+
+.card__inner {
+    width: 194px;
+    height: 194px;
+    background: white;
+    margin-left: 2.5px;
+    margin-top: 2.5px;
+    position: absolute;
+    z-index: 1;
+}
+
+
+@keyframes rotate {
+    0% { transform: rotate(0deg);}
+    100% { transform: rotate(100deg);}
+    180% { transform: rotate(180deg);}
+    360% { transform: rotate(0deg);}
+    
+}
