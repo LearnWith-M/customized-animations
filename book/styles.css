@@ -1,0 +1,87 @@
+body {
+    --clip-width: 30px;
+    --clip-height:60px;
+
+}
+.scene {
+    height: 100vh;
+    perspective: 800px;
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+}
+
+.book-container {
+    /* border-radius: 15px; */
+    /* width: 20vw;
+    height: 50vh;
+    background-color: green; */
+    transform: rotateX(10deg) rotateY(-10deg) rotateZ(8deg);
+    transform-style: preserve-3d;
+
+}
+
+
+.clip__back , .clip__front{
+    width: var(--clip-width);
+    height: var(--clip-height);
+    border: 4px solid #333;
+    border-radius: 50%;
+    box-sizing: border-box;
+    position: absolute;
+    background: transparent;
+}
+
+.clip__front {
+    left: 0;
+}
+
+.clip__back {
+  right: 0;
+}
+
+.clip-container__back, .clip-container__front {
+    top:-3.5%;
+    margin-left: 1vw;
+    width: calc(var(--clip-width)/2);
+    height: var(--clip-height);
+    overflow: hidden;
+    position: absolute;
+}
+
+.clip-container__front{
+    left: 0;
+    z-index: 3;
+}
+
+.page {
+    width: 20vw;
+    height: 50vh;
+    position: absolute;
+    /* background-color: aqua; */
+    z-index: 2;
+    /* animation: rotate 3s infinite; */
+    /* transform-origin: top; */
+    /* transform-style: preserve-3d; */
+}
+
+.page__front, .page__back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 15px;
+    background-color: antiquewhite;
+    /* animation: rotate 3s infinite; */
+}
+
+
+.clip-container__back {
+    z-index: 1;
+    left: calc(var(--clip-width)/2);
+}
+
+@keyframes rotate {
+    0% { transform: rotateX(0deg);}
+    90% { transform: rotateX(90deg);}
+    360% { transform: rotateX(0deg);}
+}
