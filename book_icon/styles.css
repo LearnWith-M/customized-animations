@@ -1,0 +1,51 @@
+body {
+  margin-top: 3em;
+}
+.book_icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  --sideLen: 5em;
+}
+
+.sqre_icon {
+  width: var(--sideLen);
+  height: var(--sideLen);
+  box-sizing: border-box;
+  border: 2px solid black;
+  transform: rotateZ(45deg);
+}
+
+.circ {
+  position: relative;
+  width: calc(var(--sideLen) / 2);
+  height: calc(var(--sideLen) / 2);
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+.circ_sm_l,
+.circ_sm_r {
+  bottom: 50%;
+  transform: scale(0.75);
+  position: absolute;
+}
+
+.circ_sm_l {
+  left: 50%;
+}
+
+.circ_sm_r {
+  right: 50%;
+}
+
+.vert-line {
+  position: absolute;
+  width: 2px;
+  height: 10em;
+  background-color: black;
+  left: 50%;
+  right: 50%;
+  top: 50%;
+}
