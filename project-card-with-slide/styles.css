@@ -1,0 +1,31 @@
+.card__image {
+    display: grid;
+}
+
+
+.card__image__line--single img {
+    max-width: 95%;
+    padding: 1px;
+    border: 1px solid;
+    margin-left: -4px;
+}
+
+.card__image__line--multiple {
+    display: flex;
+}
+
+.card__image__line--multiple img {
+    max-width: 45.75%;
+    padding: 1px;
+    margin: 0.1px;
+    border: 1px solid;
+}
+
+
+div {
+        width: 200px;
+        height: 200px;
+        background-color: rgb(176, 176, 93);
+        clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%); /* Diamond shape */
+        border-radius: 100px; /* Applies rounding to the diamond's corners */
+    }

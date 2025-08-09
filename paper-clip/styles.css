@@ -1,0 +1,14 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-height: 100vh;
+}
+
+.paper-clip {
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border:1px solid red;
+}

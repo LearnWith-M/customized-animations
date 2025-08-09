@@ -1,6 +1,16 @@
 body {
+  /* margin-top: 3em;
+  transform: rotate(90deg); */
   margin-top: 3em;
 }
+
+.book-cover {
+    border: 1px red solid;
+    width: 30em;
+    height: 40em;
+    overflow: hidden;
+}
+
 .book_icon {
   display: flex;
   justify-content: center;
@@ -48,4 +58,18 @@ body {
   left: 50%;
   right: 50%;
   top: 50%;
+}
+
+
+.book_icon:nth-of-type(1){
+    transform: rotate(180deg);
+}
+
+.book_icon:nth-of-type(2){
+    position: relative;
+    transform: rotate(-45deg) scale(1.5);
+}
+
+.book_icon:nth-of-type(3){
+    transform: rotate(180deg) scale(3);
 }

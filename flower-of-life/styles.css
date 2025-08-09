@@ -1,0 +1,19 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsl(210, 50%, 20%);
+}
+
+
+.dimention {
+  width: 40em;
+  height: 30em;
+  background-color: salmon;
+  transform: perspective(1000px) rotateX(4deg);
+  box-shadow: 24px 16px 64px 0 rgba(0, 0, 0, 0.08);
+  border-radius: 2px;
+  
+}

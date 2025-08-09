@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    --sqreLen: 7em;
+    --wrapLen: 10em;
+
+}
+.sqre{
+    width: var(--wrapLen);
+    height: var(--wrapLen);
+    background-color: red;
+}
+
+
+
+.mask {
+    position: absolute;
+    width: var(--sqreLen);
+    height: var(--sqreLen);
+    background-color: transparent;
+    border: 10px solid magenta;
+}
+
+
+
+@keyframes rotate {
+    0% {
+        transform: rotateZ(0deg);
+    }
+    50% {
+        transform: rotateZ(180deg);
+    }
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
