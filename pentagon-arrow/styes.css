@@ -1,0 +1,102 @@
+.container {
+    height: 4em;
+    border-radius: 5px;
+    float: left;
+    width: 15em;
+    padding: 1em;
+    margin: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+
+}
+
+.container-wrapper {
+    display: flex;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.container-wrapper:after {
+  content: "";
+  display: table;
+  clear: both;
+  display: flex;
+  align-self: center;
+}
+
+.right-arrow, .left-arrow {
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    background-color: darkred;
+}
+
+.right-arrow {
+    clip-path: polygon(0% 0%, 100% 25%, 100% 75%, 0 100%, 0 90% , 80% 70%, 80% 30%, 0 10%);
+}
+
+.left-arrow {
+    clip-path: polygon(0% 25%, 100% 0%, 100% 10%, 20% 30%, 20% 70% , 100% 90%, 100% 100%, 0 75%);
+}
+
+.left-1-arrow {
+    margin-left: 2em;
+        animation: moveLeftArrow 2s infinite;
+}
+
+.left-2-arrow {
+    margin-left: 4em;
+        animation: moveLeftArrow 2s infinite;
+}
+
+.right-1-arrow {
+    margin-right: 2em;
+    animation: moveRightArrow 2s infinite;
+}
+
+.right-2-arrow {
+    margin-right: 4em;
+    animation: moveRightArrow 2s infinite;
+}
+
+
+@keyframes moveRightArrow {
+0% {
+    opacity: 0;
+    transform: translateX(0);
+}
+
+70% {
+    opacity: 20%;
+    transform: translateX(3em);
+}
+
+100% {
+    opacity: 60%;
+    transform: translateX(8em);
+}
+}
+
+@keyframes moveLeftArrow {
+0% {
+    opacity: 0;
+    transform: translateX(0);
+}
+70% {
+    opacity: 20%;
+    transform: translateX(-3em);
+}
+100% {
+    opacity: 60%;
+    transform: translateX(-8em);
+}
+}
+
+
+
+
